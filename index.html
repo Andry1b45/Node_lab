@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Просте вертикальне меню</title>
+    <link rel="stylesheet" href="stylesheets\main.css" type="text/css" />
+    <script language="JavaScript">
+      function choose(obj) {
+        obj.children[0].innerHTML = "&#8593";
+      }
+      function choose2(obj) {
+        obj.children[0].innerHTML = "";
+      }
+    </script>
+  </head>
+  <body background="fon1.jpg">
+    <div id="need"></div>
+    <div class="text3_5">
+      <div id="img1" onmouseover="choose(this)" onmouseout="choose2(this)">
+        <div id="smth"></div>
+        <img src="pch1.gif" аlt="пункт 1" width="300" height="200" />
+      </div>
+      <br />
+      <div id="img2" onmouseover="choose(this)" onmouseout="choose2(this)">
+        <div id="smth"></div>
+        <img src="pch2.gif" аlt=" пункт 1" width="300" height="200" />
+      </div>
+      <br />
+      <div id="img3" onmouseover="choose(this)" onmouseout="choose2(this)">
+        <div id="smth"></div>
+        <img src="pch3.gif" аlt=" пункт 1" width="300" height="200" />
+      </div>
+      <br />
+    </div>
+  </body>
+</html>

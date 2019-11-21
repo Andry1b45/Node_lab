@@ -4,7 +4,10 @@
   "description": "A node lab for uni",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run lint",
+    "prettier": "prettier --config .prettierrc.json --write ./.js",
+    "start": "node index.html",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -17,10 +20,18 @@
   },
   "homepage": "https://github.com/Andry1b45/Node_lab#readme",
   "dependencies": {
-    "lodash": "^4.17.15"
+    "eslint": "^6.6.0",
+    "lodash": "^4.17.15",
+    "prettier": "^1.19.1"
   },
   "devDependencies": {
-    "eslint": "^6.6.0",
-    "mocha": "^6.2.2"
+    "conventional-changelog-cli": "^2.0.28",
+    "husky": "^3.1.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run prettier",
+      "pre-push": "call npm run lint && call npm run test"
+    }
   }
 }
