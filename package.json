@@ -1,0 +1,26 @@
+{
+  "name": "node_lab",
+  "version": "1.0.0",
+  "description": "A node lab for uni",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andry1b45/Node_lab.git"
+  },
+  "author": "Bersh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Andry1b45/Node_lab/issues"
+  },
+  "homepage": "https://github.com/Andry1b45/Node_lab#readme",
+  "dependencies": {
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "mocha": "^6.2.2"
+  }
+}
