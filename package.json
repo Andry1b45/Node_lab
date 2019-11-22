@@ -9,7 +9,7 @@
   "scripts": {
     "test": "npm run lint",
     "prettier": "prettier --config .prettierrc.json --write ./*.js",
-    "start": "node index.js",
+    "start": "node index.js && node sayhello.js",
     "lint": "eslint ."
   },
   "repository": {
