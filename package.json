@@ -2,6 +2,9 @@
   "name": "node_lab",
   "version": "1.0.0",
   "description": "A node lab for uni",
+  "engines": {
+    "node": "12.13.0"
+  },
   "main": "index.js",
   "scripts": {
     "test": "npm run lint",
