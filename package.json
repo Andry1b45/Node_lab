@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "npm run lint",
-    "prettier": "prettier --config .prettierrc.json --write ./.js",
-    "start": "node index.html",
+    "prettier": "prettier --config .prettierrc.json --write ./*.js",
+    "start": "node index.js",
     "lint": "eslint ."
   },
   "repository": {
