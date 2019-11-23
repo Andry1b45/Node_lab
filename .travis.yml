@@ -5,3 +5,10 @@ script:
   - npm test
 notifications:
   email: false
+before_deploy: "echo 'ready?'"
+deploy:
+  provider: firebase
+  token:
+    secure: $node-js-firebase-app
+  project: "myapp-staging"
+  message: "Deploying!!!"  
