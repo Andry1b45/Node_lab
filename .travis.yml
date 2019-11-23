@@ -1,8 +1,8 @@
 language: node_js
 node_js:
-  - node
+  - node index.js
 script:
-  - npm start
+  - npm test
 notifications:
   email: false
 before_deploy: "echo 'ready?'"
