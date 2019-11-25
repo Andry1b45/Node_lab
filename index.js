@@ -2,6 +2,7 @@
 const http = require('http');
 const hostname = '127.0.0.1';
 var port = normalizePort(process.env.PORT || '9000');
+app.set('port', port);
 const server = http.createServer((req, res) => {
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/plain');
