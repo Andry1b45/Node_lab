@@ -5,3 +5,7 @@ script:
   - npm test
 notifications:
   email: false
+deploy: 
+  provider: heroku
+  api_key: $key
+  app: node_lab
